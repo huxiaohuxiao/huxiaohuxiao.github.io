@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>博客</title>
+  <title>cookie and seesion | 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="cookie定义
+指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）
+cookie机制cookie机制。正统的cookie分发是通过扩展HTTP协议来实现的，服务器通过在HTTP的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的cookie。然而纯粹的客户端脚本如JavaScript或者VBScript也可以生成cookie。而cookie的使">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cookie and seesion">
+<meta property="og:url" content="http://yoursite.com/2016/12/07/cookie-and-seesion/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="cookie定义
+指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）
+cookie机制cookie机制。正统的cookie分发是通过扩展HTTP协议来实现的，服务器通过在HTTP的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的cookie。然而纯粹的客户端脚本如JavaScript或者VBScript也可以生成cookie。而cookie的使">
+<meta property="og:updated_time" content="2016-12-07T08:55:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
+<meta name="twitter:title" content="cookie and seesion">
+<meta name="twitter:description" content="cookie定义
+指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）
+cookie机制cookie机制。正统的cookie分发是通过扩展HTTP协议来实现的，服务器通过在HTTP的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的cookie。然而纯粹的客户端脚本如JavaScript或者VBScript也可以生成cookie。而cookie的使">
   
     <link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
   
@@ -59,9 +69,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-cookie-and-seesion" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-cookie-and-seesion" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/12/07/cookie-and-seesion/" class="article-date">
   <time datetime="2016-12-07T08:54:19.000Z" itemprop="datePublished">2016-12-07</time>
@@ -74,8 +82,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/07/cookie-and-seesion/">cookie and seesion</a>
+    <h1 class="article-title" itemprop="name">
+      cookie and seesion
     </h1>
   
 
@@ -119,53 +127,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-http-中-get-与-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/03/http-中-get-与-post/" class="article-date">
-  <time datetime="2016-11-03T03:28:46.000Z" itemprop="datePublished">2016-11-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/03/http-中-get-与-post/">单页面微信鉴权问题</a>
-    </h1>
+    <a href="/2016/11/03/http-中-get-与-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">单页面微信鉴权问题</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="单页面微信鉴权问题"><a href="#单页面微信鉴权问题" class="headerlink" title="单页面微信鉴权问题"></a>单页面微信鉴权问题</h1><p>关于微信鉴权，ios和安卓上鉴权的路由有一个坑。  </p>
-<p>ios微信鉴权所需的路由必须是你的单页面的那个入口地址；而Android鉴权路由则是你需要鉴权的那个页面的路由。出现这个坑的原因是：ios和Android上微信浏览器记录的路由不一样。我发现单页面应用在做前段路由跳转时，ios微信浏览器只会记录单页面应用的入口url而不会记录当前的url；而Android则会记录当前的url地址。   </p>
-<p>在我做打包工的时候发现了这个问题。当时应用的入口地址给的是<code>m.xiaoyage.com/packer</code>，而需要微信鉴权的页面路由是<code>m.xiaoyage.com/packer/scan_pack</code>。最开始我用<code>window.location.href</code>获取当前的url鉴权。这就出现了在ios设备上鉴权失败的问题。而后在微信没有升级带6.3.28时。我当时和后端的小伙伴讨论实验得出了一个方案。那就是直接记录应用的入口地址进行微信鉴权。这种方案在微信6.3.28版本之前是ok的。但是微信的6.3.28版本跟新之后，Android部分设备就出现了鉴权失败的问题（还能顺利鉴权的只有小米系列手机和三星）。    </p>
-<p>之后，对于这个问题。我上网搜了一下，网上有一种解决方案：进入需要扫码的页面的时候进行一次<code>window.location.reload()</code>。这种解决方案在之前微信点餐支付那块有过类似的实现方案。但是对打包工这个应用频繁进行<code>reload（）</code>对于需要快速操作来说不太友好。所以我想到如果把入口地址指向需要鉴权的页面。这样<code>window.location.href</code>取到的地址即是Android需要的当前页地址也是ios需要的入口地址。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">request.get(api, &#123;</div><div class="line">            signUrl: url //扫码页面的路由</div><div class="line">        &#125;).then(function (response) &#123;</div><div class="line">            wx.config(&#123;</div><div class="line">                debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。</div><div class="line">                appId: response.result.appId, // 必填，公众号的唯一标识</div><div class="line">                timestamp: response.result.timestamp, // 必填，生成签名的时间戳</div><div class="line">                nonceStr: response.result.nonceStr, // 必填，生成签名的随机串</div><div class="line">                signature: response.result.signature,// 必填，签名，见附录1</div><div class="line">                jsApiList: response.result.jsApiList // 必填，需要使用的JS接口列表，所有JS接口列表见附录2</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">        &#125;).fail(request.DEFAULT_ERROR_HANDLER).always(() =&gt; $.hideIndicator());</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&apos;/packer/scan_pack&apos;: &#123; //  未处理前扫码页面路由</div><div class="line">    name: &apos;ScanPack&apos;,</div><div class="line">    component: ScanPack,</div><div class="line">    authenticationRequired: AUTHENTICATION_REQUIRED</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&apos;/packer&apos;: &#123; //  入口地址指向扫码页面</div><div class="line">    name: &apos;ScanPack&apos;,</div><div class="line">    component: ScanPack,</div><div class="line">    authenticationRequired: AUTHENTICATION_REQUIRED</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/03/http-中-get-与-post/" data-id="ciwep9vyi0001z9lhj0t47odq" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单页面微信鉴权问题/">单页面微信鉴权问题</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
