@@ -3,14 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>博客</title>
+  <title>一个有趣的面试题 | 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="Q: 写出js的主要数据类型和两种符合型数据类型，并写出系列结果：1234567891011121314console.log(null == NaN); console.log(Number(undefined));console.log(null == undefined); console.log(Number(&apos;&apos;));console.log(null == false); console">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一个有趣的面试题">
+<meta property="og:url" content="http://yoursite.com/2017/03/07/一个有趣的面试题/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="Q: 写出js的主要数据类型和两种符合型数据类型，并写出系列结果：1234567891011121314console.log(null == NaN); console.log(Number(undefined));console.log(null == undefined); console.log(Number(&apos;&apos;));console.log(null == false); console">
+<meta property="og:image" content="http://images2015.cnblogs.com/blog/336093/201701/336093-20170122160900316-2126536490.png">
+<meta property="og:updated_time" content="2017-03-06T16:03:05.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
+<meta name="twitter:title" content="一个有趣的面试题">
+<meta name="twitter:description" content="Q: 写出js的主要数据类型和两种符合型数据类型，并写出系列结果：1234567891011121314console.log(null == NaN); console.log(Number(undefined));console.log(null == undefined); console.log(Number(&apos;&apos;));console.log(null == false); console">
+<meta name="twitter:image" content="http://images2015.cnblogs.com/blog/336093/201701/336093-20170122160900316-2126536490.png">
   
     <link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
   
@@ -59,9 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-一个有趣的面试题" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-一个有趣的面试题" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/03/07/一个有趣的面试题/" class="article-date">
   <time datetime="2017-03-06T16:01:56.000Z" itemprop="datePublished">2017-03-07</time>
@@ -74,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/03/07/一个有趣的面试题/">一个有趣的面试题</a>
+    <h1 class="article-title" itemprop="name">
+      一个有趣的面试题
     </h1>
   
 
@@ -213,105 +217,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-cookie-and-seesion" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/12/07/cookie-and-seesion/" class="article-date">
-  <time datetime="2016-12-07T08:54:19.000Z" itemprop="datePublished">2016-12-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/12/07/cookie-and-seesion/">cookie and seesion</a>
-    </h1>
+    <a href="/2016/12/07/cookie-and-seesion/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">cookie and seesion</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>   指某些网站为了辨别用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）</p>
-<h3 id="cookie机制"><a href="#cookie机制" class="headerlink" title="cookie机制"></a>cookie机制</h3><p>  cookie机制。正统的cookie分发是通过扩展HTTP协议来实现的，服务器通过在HTTP的响应头中加上一行特殊的指示以提示浏览器按照指示生成相应的cookie。然而纯粹的客户端脚本如JavaScript或者VBScript也可以生成cookie。而cookie的使用是由浏览器按照一定的原则在后台自动发送给服务器的。浏览器检查所有存储的cookie，如果某个cookie所声明的作用范围大于等于将要请求的资源所在的位置，则把该cookie附在请求资源的HTTP请求头上发送给服务器。</p>
-<p>cookie的内容主要包括：名字，值，过期时间，路径和域。路径与域一起构成cookie的作用范围。若不设置过期时间，则表示这个cookie的生命期为浏览器会话期间，关闭浏览器窗口，cookie就消失。这种生命期为浏览器会话期的cookie被称为会话cookie。会话cookie一般不存储在硬盘上而是保存在内存里，当然这种行为并不是规范规定的。若设置了过期时间，浏览器就会把cookie保存到硬盘上，关闭后再次打开浏览器，这些cookie仍然有效直到超过设定的过期时间。存储在硬盘上的cookie可以在不同的浏览器进程间共享，比如两个IE窗口。而对于保存在内存里的cookie，不同的浏览器有不同的处理方式</p>
-<p>一个简单的栗子</p>
-<p> Cookie另一个典型的应用是当登录一个网站时，网站往往会请求用户输入用户名和密码，并且用户可以勾选“下次自动登录”。如果勾选了，那么下次访问同一网站时，用户会发现没输入用户名和密码就已经登录了。这正是因为前一次登录时，服务器发送了包含登录凭据（用户名加密码的某种加密形式）的Cookie到用户的硬盘上。第二次登录时，（如果该Cookie尚未到期）浏览器会发送该Cookie，服务器验证凭据，于是不必输入用户名和密码就让用户登录了。</p>
-<h3 id="缺陷"><a href="#缺陷" class="headerlink" title="缺陷"></a>缺陷</h3><p> Cookie的大小限制在4KB左右，对于复杂的存储需求来说是不够用的;Cookie会被附加在每个HTTP请求中，所以无形中增加了流量;在HTTP请求Cookie是明文传递的,所以安全性成问题（除非用HTTPS）。</p>
-<h2 id="session"><a href="#session" class="headerlink" title="session"></a>session</h2><h3 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h3><p> session是一种持久网络协议，在用户（或用户代理）端和服务器端之间创建关联，从而起到交换数据包的作用机制。</p>
-<h3 id="session机制"><a href="#session机制" class="headerlink" title="session机制"></a>session机制</h3><p> session机制。session机制是一种服务器端的机制，服务器使用一种类似于散列表的结构（也可能就是使用散列表）来保存信息。当程序需要为某个客户端的请求创建一个session时，服务器首先检查这个客户端的请求里是否已包含了一个session标识（称为session id ），如果已包含则说明以前已经为此客户端创建过session，服务器就按照session id 把这 个session检索出来使用（检索不到，会新建一个），如果客户端请求不包含session id ，则为此客户端创建一个session并且生成一个与此session相关联的session id ， session id的值应该是一个既不会重复，又不容易被找到规律以仿造的字符串，这个session id将被在本次响应中返回给客户端保存。保存这个session id的方式可以采用cookie， 这样在交互过程中浏览器可以自动的按照规则把这个标识发送给服务器。一般这个cookie的名字都是类似于SEEESIONID。但cookie可以被人为的禁止，则必须有其他机制以便在cookie被禁止时仍然能够把session id传递回服务器 。 经常被使用的一种技术叫做URL重写，就是把session id直接附加在URL路径的后面。还有一种技术叫做表单隐藏字段。就是服务器会自动修改表单，添加一个隐藏字段，以便在表单提交时能够把session id传递回服务器。</p>
-<h2 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h2><ol>
-<li>cookie数据存放在客户的浏览器上，session数据放在服务器上。</li>
-<li>cookie不是很安全，别人可以分析存放在本地的cookie并进行cookie欺骗考虑到安全应当使用session。</li>
-<li>session会在一定时间内保存在服务器上。当访问增多，会比较占用你服务器的性能考虑到减轻服务器性能方面，应当使用cookie。</li>
-<li>单个cookie保存的数据不能超过4K，很多浏览器都限制一个站点最多保存20个cookie。</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/12/07/cookie-and-seesion/" data-id="cizyarqes0000zllhi9gyrd6q" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/cookie/">cookie</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-http-中-get-与-post" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/11/03/http-中-get-与-post/" class="article-date">
-  <time datetime="2016-11-03T03:28:46.000Z" itemprop="datePublished">2016-11-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/03/http-中-get-与-post/">单页面微信鉴权问题</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="单页面微信鉴权问题"><a href="#单页面微信鉴权问题" class="headerlink" title="单页面微信鉴权问题"></a>单页面微信鉴权问题</h1><p>关于微信鉴权，ios和安卓上鉴权的路由有一个坑。  </p>
-<p>ios微信鉴权所需的路由必须是你的单页面的那个入口地址；而Android鉴权路由则是你需要鉴权的那个页面的路由。出现这个坑的原因是：ios和Android上微信浏览器记录的路由不一样。我发现单页面应用在做前段路由跳转时，ios微信浏览器只会记录单页面应用的入口url而不会记录当前的url；而Android则会记录当前的url地址。   </p>
-<p>在我做打包工的时候发现了这个问题。当时应用的入口地址给的是<code>m.xiaoyage.com/packer</code>，而需要微信鉴权的页面路由是<code>m.xiaoyage.com/packer/scan_pack</code>。最开始我用<code>window.location.href</code>获取当前的url鉴权。这就出现了在ios设备上鉴权失败的问题。而后在微信没有升级带6.3.28时。我当时和后端的小伙伴讨论实验得出了一个方案。那就是直接记录应用的入口地址进行微信鉴权。这种方案在微信6.3.28版本之前是ok的。但是微信的6.3.28版本跟新之后，Android部分设备就出现了鉴权失败的问题（还能顺利鉴权的只有小米系列手机和三星）。    </p>
-<p>之后，对于这个问题。我上网搜了一下，网上有一种解决方案：进入需要扫码的页面的时候进行一次<code>window.location.reload()</code>。这种解决方案在之前微信点餐支付那块有过类似的实现方案。但是对打包工这个应用频繁进行<code>reload（）</code>对于需要快速操作来说不太友好。所以我想到如果把入口地址指向需要鉴权的页面。这样<code>window.location.href</code>取到的地址即是Android需要的当前页地址也是ios需要的入口地址。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">request.get(api, &#123;</div><div class="line">            signUrl: url //扫码页面的路由</div><div class="line">        &#125;).then(function (response) &#123;</div><div class="line">            wx.config(&#123;</div><div class="line">                debug: true, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。</div><div class="line">                appId: response.result.appId, // 必填，公众号的唯一标识</div><div class="line">                timestamp: response.result.timestamp, // 必填，生成签名的时间戳</div><div class="line">                nonceStr: response.result.nonceStr, // 必填，生成签名的随机串</div><div class="line">                signature: response.result.signature,// 必填，签名，见附录1</div><div class="line">                jsApiList: response.result.jsApiList // 必填，需要使用的JS接口列表，所有JS接口列表见附录2</div><div class="line">            &#125;);</div><div class="line"></div><div class="line">        &#125;).fail(request.DEFAULT_ERROR_HANDLER).always(() =&gt; $.hideIndicator());</div></pre></td></tr></table></figure></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&apos;/packer/scan_pack&apos;: &#123; //  未处理前扫码页面路由</div><div class="line">    name: &apos;ScanPack&apos;,</div><div class="line">    component: ScanPack,</div><div class="line">    authenticationRequired: AUTHENTICATION_REQUIRED</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&apos;/packer&apos;: &#123; //  入口地址指向扫码页面</div><div class="line">    name: &apos;ScanPack&apos;,</div><div class="line">    component: ScanPack,</div><div class="line">    authenticationRequired: AUTHENTICATION_REQUIRED</div><div class="line">&#125;,</div></pre></td></tr></table></figure>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/03/http-中-get-与-post/" data-id="cizyarqey0001zllhv7dmg2yt" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单页面微信鉴权问题/">单页面微信鉴权问题</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
